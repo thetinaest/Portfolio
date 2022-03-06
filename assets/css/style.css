@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    height: 5vw;
+    color: #7d94a6;
+    background-color: #213815;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 1vw;
+}
+
+.hero {
+    color:#7d94a6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../images/forest.jpg");
+    background-size: cover;
+    height: 40vh;
+}
+
+.hero img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
