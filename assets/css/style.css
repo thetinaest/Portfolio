@@ -10,20 +10,44 @@ body {
 
 header {
     display: flex;
-    justify-content: flex-end;
-    height: 5vw;
+    justify-content: space-between;
     color: #7d94a6;
     background-color: #213815;
+    background-image: url("../images/forest.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    align-items: center;
+}
+
+h1 {
+    color: White;
+    background-color: #7d94a6;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 56px;
+    text-shadow: 1px 5px 15px black;
+}
+
+span {
+    color: #cad8e2;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     list-style: none;
 }
 
 nav ul li {
     padding: 1vw;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 2vw;
+    color: white;
+    text-shadow: 1px 5px 15px black;
+    padding: 20px;
 }
 
 .hero {
@@ -34,6 +58,8 @@ nav ul li {
     align-items: center;
     background-image: url("../images/forest.jpg");
     background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
     height: 40vh;
 }
 
@@ -41,4 +67,57 @@ nav ul li {
     height: 200px;
     width: 200px;
     border-radius: 50%;
+    border: 4px dotted white;
+}
+
+#about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+h2 {
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+    border-right: 3px solid black;
+    padding: 16px;
+    flex-wrap: wrap;
+    width: 15%;
+    text-align: right;
+    font-size: 48px;;
+}
+
+section p {
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 5px;
+    font-size: 36px;
+}
+
+
+
+/* laptops */
+@media only screen and (max-width: 992px) {
+    #about-me {
+        display: block;
+    }
+
+    h2 {
+        display: block;
+        left: auto;
+        border-bottom: 3px solid black;
+        border-right: none;
+        width: auto;
+        text-align: center;
+    }
+
+    section p {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
 }
