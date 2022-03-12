@@ -21,16 +21,17 @@ header {
 }
 
 h1 {
-    color: White;
+    color: #cad8e2;
     background-color: #7d94a6;
     border-radius: 10px;
     padding: 5px;
     font-size: 56px;
     text-shadow: 1px 5px 15px black;
+    margin: 5px;
 }
 
 span {
-    color: #cad8e2;
+    color: white;
 }
 
 nav ul {
