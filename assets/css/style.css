@@ -5,7 +5,7 @@
 }
 
 body {
-
+ background: #cad8e2;
 }
 
 header {
@@ -40,6 +40,11 @@ span {
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    color: #203017;
+    transition: color 0.5s ease;
 }
 
 nav ul {
@@ -80,7 +85,7 @@ nav ul li a {
 
 #about-me {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -102,14 +107,18 @@ h2 {
 section p {
     flex-wrap: wrap;
     width: 80%;
-    padding: 5px;
+    padding: 20px;
     font-size: 36px;
 }
 
 #work {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+}
+
+.project-gallery {
+    width: 85%;
 }
 
 .project {
@@ -122,19 +131,90 @@ section p {
     border: 3px solid black;
 }
 
+.project:hover {
+    border: 3px solid white;
+    color: black;
+    -webkit-transition: border 500ms ease-out;
+    -moz-transition: border 500ms ease-out;
+    -o-transition: border 500ms ease-out;
+    transition: border 500ms ease-out;
+}
+
+.project p {
+    color: #cad8e2;
+    background-color: #7d94a6;
+    border-radius: 10px;
+    text-shadow: 1px 5px 15px black;
+}
+
+.project:hover p {
+    font-size: 30px;
+    transition: font-size 12s;
+    -moz-transition: font-size 12s;
+    -webkit-transition: font-size 0.5s;
+    -o-transition: font-size 12s;
+}
+
 .run-buddy {
     background-image: url("../images/hero-bg.jpg");
     background-attachment: fixed;
-    background-position: 80%;
+    background-position: 90%;
     width: 80%;
     height: 400px;
-    border: 4px solid black;
     margin: 10px;
 }
 
+.other-projects {
+    width: 80%;
+    display: flex;
+    margin: 10px;
+}
 
-/* laptops */
+.refactor, .robots {
+    width: 50%;
+    margin: 5px;
+    height: 500px;
+}
+
+.refactor {
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+}
+
+.robots {
+    background-image: url("../images/robot.jpg");
+    background-size: cover;
+}
+
+footer {
+
+}
+
+footer a {
+    color: white;
+    font-size: 20px;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    background: #7d94a6;
+    color: white;
+}
+
+/* laptops and smaller */
 @media only screen and (max-width: 992px) {
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    nav ul li a {
+        font-size: 3vw;
+        padding: 10px;
+    }
 
     .hero {
         justify-content: space-around;
@@ -142,6 +222,8 @@ section p {
 
     #about-me {
         display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     h2 {
@@ -151,6 +233,7 @@ section p {
         border-right: none;
         width: auto;
         text-align: center;
+        font-size: 4vw;
     }
 
     section p {
@@ -158,5 +241,48 @@ section p {
         width: 100%;
         text-align: center;
         padding-bottom: 20px;
+        font-size: 3vw;
     }
+
+    #work {
+        display: block;
+    }
+
+    .project-gallery {
+        width: 100%;
+    }
+
+    .project-gallery p {
+        display: inline;
+        width:30%;
+        font-size: 22px;
+    }
+
+    #work h2 {
+        width: 100%;
+    }
+
+    .run-buddy {
+        width: 95%;
+        margin-left: 15px;
+        background-attachment: unset;
+        background-size: cover;
+        background-position: 90%;
+    }
+
+    .other-projects {
+        display: block;
+        width: 100%;
+    }
+
+    .refactor, .robots {
+        width: 95%;
+        margin: 5px;
+        height: 200px;
+    }
+
+    footer a {
+        font-size: 3vw;
+    }
+
 }
