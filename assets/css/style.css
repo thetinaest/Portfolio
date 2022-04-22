@@ -186,6 +186,12 @@ section p {
     background-size: cover;
 }
 
+.tunalyze {
+    background-image: url("../images/Tunalyze Logo Notes Cropped (1).png");
+    background-size: cover;
+}
+
+
 footer {
 
 }
@@ -275,7 +281,7 @@ footer a {
         width: 100%;
     }
 
-    .refactor, .robots {
+    .refactor, .robots, .tunalyze {
         width: 95%;
         margin: 5px;
         height: 200px;
